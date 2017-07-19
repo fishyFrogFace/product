@@ -3,19 +3,19 @@ import './App.css'
 
 class Text extends Component {
     constructor(props) {
-        super(props);
-        this.state = {value: '', ready: false};
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        super(props)
+        this.state = {value: '', ready: false}
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleChange(event) {
-        this.setState({value: event.target.value, ready: false});
+        this.setState({value: event.target.value, ready: false})
     }
 
     handleSubmit(event) {
-        this.setState({ready: true});
-        event.preventDefault();
+        this.setState({ready: true})
+        event.preventDefault() //needed to avoid "Press enter..." after string is displayed
     }
 
     output(ready) {
@@ -38,7 +38,7 @@ class Text extends Component {
                     </label>
                 </form>
             </div>
-        );
+        )
     }
 }
 
