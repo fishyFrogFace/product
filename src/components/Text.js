@@ -29,7 +29,7 @@ class Text extends Component {
 
     render() {
         return (
-            <div>
+            <div className="product-name">
                 {this.output(this.state.ready)}
                 <form onSubmit={this.handleSubmit}>
                     <label>

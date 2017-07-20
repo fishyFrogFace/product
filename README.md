@@ -1,6 +1,6 @@
 # react-products
 
-Simple react app to list products
+Simple [React] app to list products
 
 Requirements:
 - git
@@ -15,4 +15,8 @@ npm install
 npm start
 ```
 
+The vector images can be found on [Pixabay] and are released under [Creative Commons CC0]
+
 [React]: http://facebook.github.io/react/
+[Pixabay]: https://pixabay.com/en/users/Clker-Free-Vector-Images-3736/
+[Creative Commons CC0]: https://creativecommons.org/publicdomain/zero/1.0/deed.en

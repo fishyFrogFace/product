@@ -1,0 +1,22 @@
+.element-upload {
+    display: flex;
+    max-width: 100%;
+    margin-top: 2em;
+}
+
+.image-preview {
+    max-width: 50%;
+    max-height: 20em;
+}
+
+.image-upload {
+    width: 50%;
+}
+
+.product-name {
+    width: 50%;
+}
+
+Dropzone {
+    background-color: black;
+}
