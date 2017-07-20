@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import logo from '../images/milk.svg'
 import './App.css'
 import './Preview.css'
 import Preview from './Preview'
 import Text from './Text'
+import Header from "./Header";
 
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <Header />
                     <h2>Products</h2>
                 </div>
                 <div className="element-upload">
