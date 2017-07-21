@@ -1,7 +1,23 @@
-.element-upload {
+.upload-preview {
     display: flex;
     max-width: 100%;
     margin-top: 2em;
+}
+
+.upload-preview div {
+    width: 50%;
+}
+
+.upload-preview * {
+    margin: 0px 5px 10px 5px;
+}
+
+.upload {
+    padding-left: 80px;
+}
+
+.preview {
+    padding-right: 80px;
 }
 
 .image-preview {
@@ -9,14 +25,23 @@
     max-height: 20em;
 }
 
-.image-upload {
-    width: 50%;
-}
-
 .product-name {
     width: 50%;
 }
 
-Dropzone {
-    background-color: black;
+.dropzone {
+    width: 80%;
+    height: 6em;
+    margin: auto;
+}
+
+.dropzone:hover {
+    background-color: azure;
+    height: 20em;
+    width: inherit;
+}
+
+.dropzone p {
+    font-size: 2em;
+    margin: 10px;
 }

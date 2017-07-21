@@ -1,41 +1,25 @@
 import React, { Component } from 'react'
-import Dropzone from 'react-dropzone'
-import example from '../images/cheese-25234.svg'
 
 class Preview extends Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {img: example}
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
-    }
-
-    handleChange(files) {
-        //handle error
-        let reader = new FileReader()
-        reader.onloadend = () => {
-            this.setState({img: reader.result})
+    static previewText(string) {
+        console.log(string)
+        switch (string) {
+            case '':
+                return <h2>Enter a product name</h2>
+            default:
+                return <h2>{string}</h2>
         }
-        reader.readAsDataURL(files[0])
-    }
-
-    handleSubmit(event) {
-        //handle upload
-        this.setState({img: example})
     }
 
     render() {
         return (
-            <div className="image-upload">
+            <div className="preview">
                 <img
-                    src={this.state.img}
+                    src={this.props.img}
                     alt="New product"
                     className="image-preview" />
-                <Dropzone
-                    multiple={false}
-                    accept="image/*"
-                    onDrop={this.handleChange} />
+                {Preview.previewText(this.props.text)}
             </div>
         )
     }

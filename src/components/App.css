@@ -17,4 +17,6 @@ h2 {
     color: white;
     font-size: 2em;
     margin-top: 10px;
+    stroke-width: 2px;
+    -webkit-text-stroke: 1px black;
 }
