@@ -1,3 +1,5 @@
+//unmodified from https://github.com/okonet/react-dropzone
+
 import React from 'react'
 import { mount, render } from 'enzyme'
 import { spy, stub } from 'sinon'

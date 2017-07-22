@@ -1,3 +1,5 @@
+//modified from https://github.com/okonet/react-dropzone
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
@@ -15,6 +17,7 @@ class Dropzone extends Component {
         this.onDragLeave = this.onDragLeave.bind(this)
         this.onDrop = this.onDrop.bind(this)
         this.onClick = this.onClick.bind(this)
+
     }
 
     propTypes: {
@@ -51,6 +54,14 @@ class Dropzone extends Component {
         }
     }
 
+    static getFiles(event) {
+        if (event.dataTransfer) {
+            return event.dataTransfer.files
+        } else if (event.target) {
+            return event.target.files
+        }
+    }
+
     onDrop(event) {
         event.preventDefault()
 
@@ -58,46 +69,38 @@ class Dropzone extends Component {
             isDragActive: false
         })
 
-        const getFiles = () => {
-            if (event.dataTransfer) {
-                return event.dataTransfer.files
-            } else if (event.target) {
-                return event.target.files
-            }
-        }
-
-        let files = getFiles()
+        const files = Dropzone.getFiles(event)
         const maxFiles = (this.props.multiple) ? files.length : 1
 
-        for (var i = 0; i < maxFiles; i++) {
+        Array.from(Array(maxFiles).keys()).forEach((i) => {
             files[i].preview = URL.createObjectURL(files[i])
-        }
+        })
 
         if (this.props.onDrop) {
-            files = Array.prototype.slice.call(files, 0, maxFiles)
-            this.props.onDrop(files, event)
+            this.props.onDrop(Array.prototype.slice.call(files, 0, maxFiles), event)
         }
     }
 
     onClick() {
+
         if (this.props.supportClick === true) {
             this.open()
         }
     }
 
     open() {
-        var fileInput = ReactDOM.findDOMNode(this.refs.fileInput)
+        const fileInput = ReactDOM.findDOMNode(this.refs.fileInput)
         fileInput.value = null
         fileInput.click()
     }
 
     render() {
-        var className = this.props.className || 'dropzone'
+        let className = this.props.className || 'dropzone'
         if (this.state.isDragActive) {
             className += (' ' + this.props.activeClassName) || ' active'
         }
 
-        var style = {}
+        let style = {}
         if (this.props.style) { // user-defined inline styles take priority
             style = this.props.style
         } else if (!this.props.className) { // if no class or inline styles defined, use defaults
