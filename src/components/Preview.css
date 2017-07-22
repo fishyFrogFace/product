@@ -31,7 +31,6 @@
 
 .dropzone {
     width: 80%;
-    height: 6em;
     margin: auto;
 }
 
@@ -42,6 +41,6 @@
 }
 
 .dropzone p {
-    font-size: 2em;
+    font-size: 3vw;
     margin: 10px;
 }
