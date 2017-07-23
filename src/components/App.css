@@ -3,13 +3,13 @@
 }
 
 .header-logo {
-    height: 100px;
+    width: 10vw;
     margin-right: 10px;
 }
 
 .App-header {
     background-color: #033ea4;
-    height: 150px;
+    height: 30vh;
     padding: 20px;
 }
 

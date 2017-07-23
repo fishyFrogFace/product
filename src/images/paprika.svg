@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -45,8 +45,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.39731185"
-     inkscape:cx="445.83957"
+     inkscape:zoom="0.93895965"
+     inkscape:cx="274.3732"
      inkscape:cy="432.93076"
      inkscape:window-x="65"
      inkscape:window-y="24"
@@ -55,10 +55,10 @@
   <g
      id="g1353"
      transform="translate(5410.4034,-2710.9186)"
-     style="fill:#1f1a17;fill-opacity:1;stroke:#ffeeee;stroke-width:421.3999939;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+     style="fill:#1f1a17;fill-opacity:1;stroke:#fffbfb;stroke-width:421.3999939;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
     <path
        inkscape:connector-curvature="0"
-       style="fill:#1f1a17;fill-opacity:1;stroke:#ffeeee;stroke-width:421.3999939;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#1f1a17;fill-opacity:1;stroke:#fffbfb;stroke-width:421.3999939;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path16861"
        d="m -3092.7034,2921.6186 h 6321 l 108,3 107,8 105,13 103,19 102,24 100,28 97,33 96,38 93,43 91,46 88,51 86,55 83,59 79,63 77,66 73,70 70,73 66,77 63,79 59,83 55,86 51,88 46,91 43,93 38,96 33,97 28,100 24,102 19,103 13,105 8,107 3,108 v 6321.0004 l -3,108 -8,107 -13,105 -19,103 -24,102 -28,100 -33,98 -38,95 -43,94 -46,90 -51,89 -55,85 -59,83 -63,79 -66,77 -70,73 -73,70 -77,67 -79,62 -83,59 -86,55 -88,51 -91,47 -93,42 -96,38 -97,33 -100,29 -102,23 -103,19 -105,13 -107,8 -108,3 h -6321 l -108,-3 -107,-8 -105,-13 -103,-19 -102,-23 -100,-29 -98,-33 -95,-38 -93,-42 -91,-47 -88,-51 -86,-55 -83,-59 -79,-62 -77,-67 -73,-70 -70,-73 -66,-77 -63,-79 -59,-83 -55,-85 -51,-89 -46,-90 -43,-94 -38,-95 -33,-98 -28,-100 -24,-102 -19,-103 -13,-105 -8,-107 -3,-108 V 5028.6186 l 3,-108 8,-107 13,-105 19,-103 24,-102 28,-100 33,-97 38,-96 43,-93 46,-91 51,-88 55,-86 59,-83 63,-79 66,-77 70,-73 73,-70 77,-66 79,-63 83,-59 86,-55 88,-51 91,-46 93,-43 95,-38 98,-33 100,-28 102,-24 103,-19 105,-13 107,-8 z" />
   </g>
